@@ -58,18 +58,23 @@ public class Main {
         System.out.println(abcmath(1, 2, 3));
     }
 
+    // остаток от деления
     public static int remainder(int x, int y){
         return x % y;
     }
+    // площадь треугольника, если известно основание и высота
     public static int triArea(int x, int y){
         return x * y / 2;
     }
+    // количество ног у животных
     public static int animals(int chickens, int cows, int pigs){
         return chickens * 2 + cows * 4 + pigs * 4;
     }
+    // расчёт прибыли
     public static boolean profitableGamble(double prob, double prize, double pay){
         return (prob * prize - pay) > 0;
     }
+    // операция, котоорую необходимо произвести над числами a и b, чтобы получить N
     public static String operation(double N, double a, double b){
         if (a + b == N){
             return "added";
@@ -85,9 +90,11 @@ public class Main {
         }
         else return "none";
     }
+    // значение ASCII переданного символа
     public static int ctoa(char x){
         return (int) x;
     }
+    // сумма всех чисел до заданного числа и включая его
     public static int addUpTo(int x){
         int sum = 0;
         for (int i = 1; i <= x; i++){
@@ -95,9 +102,11 @@ public class Main {
         }
         return sum;
     }
+    // максимальное значение третьего угла треугольника (целое)
     public static int nextEdge(int x, int y){
         return x + y - 1;
     }
+    // сумма кубов чисел из массива
     public static int sumOfCubes(int[] myArray){
         int sum = 0;
         for (int i = 0; i < myArray.length; i++){
@@ -105,6 +114,7 @@ public class Main {
         }
         return sum;
     }
+    // добавление числа a к себе b раз и проверка, делится ли результат на c
     public static boolean abcmath(int a, int b, int c){
         for (int i = 1; i <= b; i++){
             a = a + a;
