@@ -75,17 +75,17 @@ public class Main {
         return (prob * prize - pay) > 0;
     }
     // операция, котоорую необходимо произвести над числами a и b, чтобы получить N
-    public static String operation(double N, double a, double b){
+    public static String operation(int N, int a, int b){
         if (a + b == N){
             return "added";
         }
-        else if ((a - b == N) || (b - a == N )){
+        else if (a - b == N){
             return "subtracted";
         }
         else if (a * b == N){
             return "multiplied";
         }
-        else if (a / b == N || b / a == N){
+        else if (a / b == N){
             return "divided";
         }
         else return "none";
