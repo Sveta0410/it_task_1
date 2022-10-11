@@ -102,7 +102,7 @@ public class Main {
         }
         return sum;
     }
-    // максимальное значение третьего угла треугольника (целое)
+    // максимальное значение третьего ребра треугольника (целое)
     public static int nextEdge(int x, int y){
         return x + y - 1;
     }
